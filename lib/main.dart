@@ -73,14 +73,11 @@ class _GamePageState extends State<GamePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            for (var i = 0; i < 3; i++)
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  for (var j = 0; j < 3; j++) _buildCell(i, j),
-                ],
-              ),
+          children: [
+            Text(
+              'Escolha seu modo de jogo',
+              style: TextStyle(fontSize: 24.0),
+            ),
             const SizedBox(height: 20),
             OutlinedButton(
               onPressed: () {
